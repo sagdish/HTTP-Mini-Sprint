@@ -48,6 +48,8 @@ app.use(bodyParser.json());
 app.use(cors());
 
 app.get('/friends', (req, res) => {
+	//res.status(422)
+	//res.send({error: 'you medded'})
 	res.send(friends);
 });
 
